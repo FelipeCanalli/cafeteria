@@ -18,7 +18,7 @@ h1 {
 
   font-size: 100px;
   padding-top: 100px; /*margem do topo */
-  text-shadow: 5px 5px 10px rgb(0 0 0);
+  text-shadow: 5px 5px 1px rgb(0 0 0);
 }
 
 /* Vamos formatar os elementos de li para ficar 
@@ -92,4 +92,125 @@ div ul li {
 div a {
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
+}
+
+main {
+  /* Vamos aplicar uma margem interna de 10px
+  usando o comando padding */
+  padding: 10px;
+}
+
+h2 {
+  font-family: "Questrial", sans-serif;
+  color: brown;
+  font-size: 20pt;
+  /* solid */
+  border-bottom: 4px double brown;
+  padding-left: 100px;
+
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-family: "Questrial", sans-serif;
+  margin-left: 58px;
+  font-size: 15pt;
+  margin-bottom: 10px;
+  /* espaçamento das letras */
+  letter-spacing: 1px;
+}
+
+p {
+  padding-left: 60px;
+  padding-right: 60px;
+  /* alinha o texto dos dois lados */
+  text-align: justify;
+
+  /* aplicaremos um comando que aumenta a altura da linha. Esse efeito
+simula o espaçamento entre linhas encontrado no Word. O comando é
+ line-height -> linha height */
+  line-height: 25px;
+  margin-bottom: 30px;
+  font-family: "Questrial", sans-serif;
+}
+
+#home {
+  /* background-color: rgba(255, 0, 0, 0.26); */
+  text-align: center;
+  margin: 10px;
+}
+
+#home img {
+  height: 600px;
+  width: 600px;
+  /* Descola uma imagem da outra */
+  margin: 10px;
+
+  /* Vamos aplicar um efeito de tranparência com 
+  o comando opacity. Onde os valores 1 é totalmente 
+  vísivel e 0 é totalmente transparente  */
+  opacity: 0.8;
+  border-radius: 10%;
+  transition: ease 2s;
+}
+
+/* hover é quando você passe o mouse */
+#home img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  cursor: pointer;
+  /* transform: rotate(360deg); */
+  /* transform: rotateX(360deg); */
+  /* transform: rotateY(360deg); */
+}
+
+#acafeteria {
+  text-align: center;
+}
+#acafeteria img {
+  width: 600px;
+  height: 400px;
+}
+#acafeteria iframe {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* #video {
+  text-align: center;        /*PARA CENTRALIZARO VÍDEO
+} */
+
+/* Abaixo a formatação para a página  cardápio
+#container,
+#linha,
+#imagem,
+#texto {
+  border: 1px solid red;
+} */
+
+#container {
+  display: inline-block;
+}
+
+#linha {
+  display: inline-block;
+  width: 80%;
+}
+
+#imagem img {
+  width: 250px;
+  height: 200px;
+}
+
+#imagem {
+  width: 250px;
+  height: 200px;
+  /* fazer a imagem flutuar para a esquerda  */
+  float: left;
+}
+
+#texto {
+  padding: 20px;
+  width: 70%;
+  float: left;
 }

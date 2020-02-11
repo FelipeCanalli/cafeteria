@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cafeteria</title>
+
+    <!-- FONTES DO GOOGLE   -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Questrial|Source+Serif+Pro|Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/cafeteria.css" />
+  </head>
+  <body>
+    <!-- Criação da área do cabeçario da página com os seguintes 
+        elementos:
+        Imagem de fundo 
+        Título da nossa cafeteria
+        Barra de navegação
+    -->
+
+    <header>
+      <h1>Cafeteria Brasil</h1>
+      <nav>
+        <ul>
+          <!-- ul>li*5>a e tabular -->
+          <li><a href="index.html"> Home </a></li>
+          <li><a href="acafeteria.html"> A Cafeteria </a></li>
+          <li><a href="cardapio.html"> Cardápio </a></li>
+          <li><a href="contato.html"> Contato </a></li>
+          <li><a href="localizacao.html"> Localização </a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- A estrutura da área main fica reservada ao conteúdo das
+    páginas específicas  
+    -->
+    <main>
+      <!-- início da div container -->
+      <!--div#container -->
+      <div id="container">
+        <h3>Cafés</h3>
+
+        <!-- ínicio da div linha  -->
+        <div id="linha">
+          <!-- início da div imagem -->
+          <div id="imagem">
+            <img src="img/cafe12.jpg" alt="Café mega especial" />
+          </div>
+          <!--FIM DA DIV IMAGEM -->
+          <!-- início da div texto  -->
+          <div id="texto">
+            <h3>Café mega especial</h3>
+            <!-- p>lorem -->
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+              iste molestias quo reprehenderit aliquam odio, praesentium
+              ducimus, voluptatum sapiente debitis nemo quaerat magni?
+              Necessitatibus voluptatibus ex id sed sint quidem!
+            </p>
+            <p id="preco">R$ 15,00</p>
+          </div>
+          <!--FIM DA DIV TEXTO -->
+        </div>
+        <!--FIM DA DIV LINHA -->
+
+        <!-- ínicio da div linha  -->
+        <div id="linha">
+          <!-- início da div imagem -->
+          <div id="imagem">
+            <img src="img/cafe10.jpg" alt="Café mega especial" />
+          </div>
+          <!--FIM DA DIV IMAGEM -->
+          <!-- início da div texto  -->
+          <div id="texto">
+            <h3>Café ultra especial</h3>
+            <!-- p>lorem -->
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
+              iste molestias quo reprehenderit aliquam odio, praesentium
+              ducimus, voluptatum sapiente debitis nemo quaerat magni?
+              Necessitatibus voluptatibus ex id sed sint quidem!
+            </p>
+            <p id="preco">R$ 17,00</p>
+          </div>
+          <!--FIM DA DIV TEXTO -->
+        </div>
+        <!--FIM DA DIV LINHA -->
+      </div>
+      <!--FIM DA DIV CONTAINER -->
+    </main>
+
+    <!-- Criação da área do rodapé com o comando footer. Está área se destina
+    a exibição do endereço, email, telefone e redes sociais 
+    -->
+
+    <!-- footer>div*2 e tabulador 
+    -->
+    <footer>
+      <div id="contato">
+        Av. Doutor Rogeiro de Olilveira Nunes, 1231 - Vila Paris - SP <br />
+        <!-- mailto "email para"(abre o oulook se estiver configurado) -->
+        <a href="mailto:contato@cafeteriabrasil.com.br"
+          >contato@cafeteriabrasil.com.br</a
+        ><br />
+
+        Tel: 11 - 5562 - 2233 | 5556-9997
+      </div>
+      <div id="redes">
+        <ul>
+          <li>
+            <a href="http://www.facebook.com.br" target="_blank">
+              <img src="img/facebook.png" alt="Rede social facebook" />
+            </a>
+          </li>
+
+          <li>
+            <a href="http://www.instagram.com" target="_blank">
+              <img src="img/instagram.png" alt="Rede social instagram" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/" target="_blank">
+              <img src="img/twitter.png" alt="Rede social twitter" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
