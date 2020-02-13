@@ -40,6 +40,49 @@
     páginas específicas  
     -->
     <main>
+      <h2>Contato</h2>
+
+      <!-- form tab -->
+      <!-- página ficticia para o cliente saber que 
+      foi enviado  -->
+      <form action="confirmacao.html">
+        <!-- label + tab (sem o for) -->
+        <label>Nome *</label>
+        <input type="text" name="nome" placeholder="Nome completo" required />
+
+        <label>E-mail *</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="exemplo@dominio.com.br"
+          required
+        />
+
+        <label>Telefone</label>
+        <input type="tel" name="Telefone" />
+
+        <label>Sexo</label>
+
+        <!-- span#sexo>input*3 -->
+        <!-- usando o alt para apagar os 3 text e digitando radio -->
+        <span id="sexo">
+          <!-- precisa ter o mesmo name para permitir escolher só um  -->
+          <input type="radio" name="sexo" value="Masculino" /> Masculino
+          <input type="radio" name="sexo" value="Feminino" /> Feminino
+          <input type="radio" name="sexo" value="Outros" /> Outros
+        </span>
+
+        <select name="assunto">
+          <!-- option*5 -->
+          <option value="Selecione"> Selecione o Assunto</option>
+          <option value="Elogio"> Elogio</option>
+          <option value="Sugestão"> Sugestão</option>
+          <option value="Reclamação"> Reclamação</option>
+          <option value="Problemas"> Problemas</option>
+        </select>
+
+        <label>Mensagem</label>
+        <textarea name="Mensagem"></textarea>
 
 
 
@@ -47,7 +90,36 @@
 
 
 
-      
+        
+        <!-- span#check>input -->
+        <!-- Adicionando o name -->
+        <span id="check"
+          ><input type="checkbox" name="newsletter" />
+          Desejo receber mensagens e notícias sobre promoções e eventos em meu
+          e-mail e telefone
+        </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--submit -> enviar  -->
+        <input type="submit" value="Enviar" />
+      </form>
     </main>
 
     <!-- Criação da área do rodapé com o comando footer. Está área se destina
